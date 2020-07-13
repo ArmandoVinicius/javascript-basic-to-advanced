@@ -13,7 +13,6 @@ class CarrinhoCompra {
         }; // Estou adicionando o nome do item no array a quantidade de vezes necessária
         this.quantTot += quantItem; // Adicionando a quantidade de itens na quantidade total
         this.valTot += (quantItem * valItem); // Adicionando o valor desse item no valor total
-        console.log(itemName, quantItem, valItem);
     }
 
     removeItem(itemName, quantItem, valItem) {
@@ -28,7 +27,6 @@ class CarrinhoCompra {
             }
         }else{
             console.log('Impossível remover a quantidade ou item desejado');
-            console.log(itemName, quantItem, valItem);
         }
     }
 }
@@ -46,6 +44,6 @@ console.log('Terminou de adicionar.');
 compra.removeItem('noz', 1, 5);
 compra.removeItem('maçã', 4, 2.5);
 
-/* console.log('Removendo itens...');
+console.log('Removendo itens...');
 console.log(compra.itens, compra.quantTot, compra.valTot); // [noz, arroz], 2, 8
-console.log('Terminou de remover.'); */
+console.log('Terminou de remover.'); 
